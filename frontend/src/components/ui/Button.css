@@ -1,0 +1,75 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn:focus-visible {
+    box-shadow: 0 0 0 2px var(--background), 0 0 0 4px var(--primary);
+}
+
+/* Variants */
+.btn-primary {
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-text));
+}
+
+.btn-primary:hover:not(:disabled) {
+    background-color: hsl(var(--primary-hover));
+}
+
+.btn-secondary {
+    background-color: hsl(var(--surface));
+    color: hsl(var(--text-main));
+    border-color: hsl(var(--border));
+}
+
+.btn-secondary:hover:not(:disabled) {
+    background-color: hsl(var(--surface-hover));
+}
+
+.btn-ghost {
+    background-color: transparent;
+    color: hsl(var(--text-main));
+}
+
+.btn-ghost:hover:not(:disabled) {
+    background-color: hsl(var(--surface-hover));
+}
+
+.btn-danger {
+    background-color: hsl(var(--danger));
+    color: white;
+}
+
+/* Sizes */
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+}
+
+.btn-md {
+    padding: 0.5rem 1rem;
+}
+
+.btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+}
+
+.btn-icon {
+    padding: 0.5rem;
+}

@@ -1,0 +1,110 @@
+.dashboard-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.page-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: hsl(var(--text-main));
+    margin: 0 0 0.5rem 0;
+}
+
+.page-subtitle {
+    color: hsl(var(--text-muted));
+    margin: 0;
+}
+
+.mr-2 {
+    margin-right: 0.5rem;
+}
+
+/* Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background-color: hsl(var(--surface));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    border-color: hsl(var(--primary));
+    box-shadow: 0 4px 20px -8px rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.icon-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    background-color: hsl(var(--surface-hover));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(var(--primary));
+}
+
+.meta h3 {
+    margin: 0;
+    font-size: 1.125rem;
+    color: hsl(var(--text-main));
+}
+
+.meta .slug {
+    font-size: 0.875rem;
+    color: hsl(var(--text-muted));
+}
+
+.description {
+    color: hsl(var(--text-muted));
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin: 0 0 1.5rem 0;
+    flex: 1;
+}
+
+.card-footer {
+    border-top: 1px solid hsl(var(--border));
+    padding-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: hsl(var(--primary));
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.loading {
+    color: hsl(var(--text-muted));
+    text-align: center;
+    margin-top: 4rem;
+}
